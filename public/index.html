@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📝 Список заметок</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-sticky-note"></i> Список заметок</h1>
+            <p class="subtitle">Управляйте своими заметками</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Форма добавления заметки -->
+            <div class="card">
+                <h2><i class="fas fa-plus"></i> Новая заметка</h2>
+                <form id="note-form">
+                    <input type="text" id="note-title" placeholder="Заголовок заметки" required>
+                    <textarea id="note-content" placeholder="Содержание заметки" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Сохранить
+                    </button>
+                </form>
+            </div>
+
+            <!-- Поиск -->
+            <div class="card">
+                <h2><i class="fas fa-search"></i> Поиск</h2>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Искать заметки...">
+                    <button id="search-btn" class="btn">Найти</button>
+                    <button id="clear-search" class="btn btn-secondary">Сбросить</button>
+                </div>
+            </div>
+
+            <!-- Список заметок -->
+            <div class="card">
+                <h2><i class="fas fa-list"></i> Мои заметки <span id="notes-count">(0)</span></h2>
+                <div id="notes-container">
+                    <p class="empty">Заметок пока нет. Создайте первую!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно редактирования -->
+        <div id="edit-modal" class="modal">
+            <div class="modal-content">
+                <h2><i class="fas fa-edit"></i> Редактировать заметку</h2>
+                <form id="edit-form">
+                    <input type="hidden" id="edit-id">
+                    <input type="text" id="edit-title" placeholder="Заголовок" required>
+                    <textarea id="edit-content" placeholder="Содержание" rows="4" required></textarea>
+                    <div class="modal-actions">
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                        <button type="button" id="cancel-edit" class="btn">Отмена</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>Express.js приложение | Список заметок</p>
+            <p class="api-info">API: <code>/api/notes</code></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
