@@ -18,3 +18,4 @@ https://github.com/savrys/dgde/blob/main/skreen.png
 
 система поиска>
 https://github.com/savrys/dgde/blob/main/screen/%D0%BF%D0%BE%D0%B8%D1%81%D0%BA.png
+https://github.com/savrys/dgde/blob/main/screen/1.png
