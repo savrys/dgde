@@ -12,7 +12,7 @@ https://github.com/savrys/dgde/blob/main/skreen.png
 
 редактирование заметки>
 https://github.com/savrys/dgde/blob/main/screen/%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82.png
-
+https://github.com/savrys/dgde/blob/main/screen/%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%822.png
 
 система поиска>
 
